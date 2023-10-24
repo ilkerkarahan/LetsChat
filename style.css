@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#chat {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.selectPersonImg {
+    margin: 0px 15px 40px 15px;
+    border-radius: 50%;
+    filter: grayscale(80%);
+}
+
+.active {
+    filter: none;
+    border: 3px solid #68ff03;
+}
+
+
+.container {
+    width: 400px;
+}
+.card{
+    width: 380px;
+}
+
+h1 {
+    font-size: 20px;
+}
+
+h1:hover {
+    scale: 1.05;
+    transition: 0.4s;
+}
+
+.imgDesign {
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.card-body {
+    height: 560px;
+    overflow: auto;
+    background-color: rgb(245, 240, 240);
+    position: relative;
+}
+
+.card-body::-webkit-scrollbar {
+    width: 10px;
+}
+
+.card-body::-webkit-scrollbar-track {
+    background-color: rgb(218, 222, 224);
+}
+
+.card-body::-webkit-scrollbar-thumb {
+    background-color: #59a6ee;
+    border-radius: 100px;
+  }
+
+.message-first {
+    display: flex;
+    justify-content: left;
+    margin-bottom: 10px;
+}
+
+.message1 {
+    background-color: rgb(234, 243, 226);
+    padding: 2px;
+    border-radius: 40px;
+}
+
+.imgDesign2 {
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.message-first p, .message-second p  {
+    padding: 10px 20px;
+    font-size: 14px;
+}
+
+.message-second {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: right;
+}
+
+.message2 {
+    background-color: rgb(219, 231, 236);
+    padding: 2px;
+    border-radius: 40px;
+}
+
+.imgDesign3 {
+    height: 30px;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+
+#inputGroup {
+    position: fixed;
+    bottom: 125px;
+    left: 380;
+}
+
+input {
+    width: 340px;
+    border-radius: 20px;
+    outline: none;
+    border: 2px solid rgb(145, 191, 218);
+    padding: 5px 20px;
+}
+
+input:focus {
+    border: 2px solid rgb(4, 137, 247);
+}
+
+.send-message {
+    position: relative;
+    width: 20px;
+    bottom: 3px;
+    right: 30px;
+}
